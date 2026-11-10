@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BRAVA BURGER — hamburguesería artesanal moderna con una experiencia premium y urbana. Demostración comercial ficticia."/>
+    <title>BRAVA BURGER | No es una hamburguesa más</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="img/images.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrapper">
+        <a href="#home" class="brand" aria-label="Volver al inicio">
+          <span class="brand-mark">B</span>
+          <span class="brand-text">BRAVA</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+          <a href="#home">Inicio</a>
+          <a href="#menu">Menú</a>
+          <a href="#cart">Carrito</a>
+          <a href="#about">Nosotros</a>
+          <a href="#promos">Promociones</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+
+        <a class="cart-button" href="#cart" aria-label="Ir al carrito">
+          <span>Carrito</span>
+          <span id="cart-count-badge" class="cart-count">0</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Hamburguesería artesanal • moderna • urbana</p>
+            <h1>NO ES UNA HAMBURGUESA MÁS.</h1>
+            <p class="hero-text">
+              BRAVA BURGER combina sabor, textura y diseño para crear una experiencia
+              gourmet que se siente premium desde el primer bocado.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#menu" class="primary-btn">DESCUBRIR MENÚ</a>
+              <a
+                href="https://wa.me/56900000000?text=Hola%20BRAVA%20BURGER%2C%20quiero%20reservar%20una%20mesa%20o%20consultar%20el%20men%C3%BA."
+                class="secondary-btn"
+                target="_blank"
+                rel="noreferrer"
+                >RESERVAR</a>
+            </div>
+
+            <ul class="hero-highlights" aria-label="Características de la marca">
+              <li>Carne premium</li>
+              <li>Preparación artesanal</li>
+              <li>Experiencia urbana</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-image-frame">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+                alt="Hamburguesa artesanal sobre tabla con ingredientes frescos"
+              />
+            </div>
+            <div class="hero-badge">
+              <span>BRAVA</span>
+              <small>Desde 2024</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow eyebrow-dark">Menú estrella</p>
+            <h2>HAMBURGUESAS QUE MARCAN LA DIFERENCIA</h2>
+          </div>
+
+          <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="cart" class="section cart-section">
+        <div class="container cart-shell">
+          <div class="cart-panel reveal">
+            <div class="section-header compact-header">
+              <p class="eyebrow eyebrow-dark">Tu pedido</p>
+              <h2>CARRITO</h2>
+            </div>
+
+            <div id="cart-items" class="cart-items" aria-live="polite"></div>
+          </div>
+
+          <aside class="checkout-card reveal" aria-label="Resumen del pedido">
+            <p class="eyebrow eyebrow-dark">Resumen</p>
+            <h3>ESTE PEDIDO</h3>
+
+            <div class="summary-line">
+              <span>Productos</span>
+              <strong id="item-count">0</strong>
+            </div>
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <strong id="subtotal">$0</strong>
+            </div>
+            <div class="summary-line total-line">
+              <span>Total</span>
+              <strong id="total">$0</strong>
+            </div>
+
+            <button id="empty-cart" class="ghost-btn" type="button">VACIAR CARRITO</button>
+            <button
+              id="checkout-whatsapp"
+              class="primary-btn full-width"
+              type="button"
+            >
+              FINALIZAR POR WHATSAPP
+            </button>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="about-visual reveal">
+            <img
+              src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80"
+              alt="Chef preparando hamburguesas gourmet"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="eyebrow eyebrow-dark">Nosotros</p>
+            <h2>LA ESENCIA DE BRAVA BURGER</h2>
+            <p>
+              Cada hamburguesa se prepara con una atención minuciosa: ingredientes
+              frescos, pan brioche artesanal, carne seleccionada y una ejecución que
+              resalta la textura de cada capa.
+            </p>
+            <p>
+              Nuestra propuesta nace para quienes buscan algo más que comida rápida:
+              una experiencia gastronómica donde cada detalle cuenta.
+            </p>
+
+            <div class="about-points">
+              <div>
+                <strong>01</strong>
+                <span>Ingredientes premium</span>
+              </div>
+              <div>
+                <strong>02</strong>
+                <span>Preparación artesanal</span>
+              </div>
+              <div>
+                <strong>03</strong>
+                <span>Experiencia urbana</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="promos" class="section promos-section">
+        <div class="container">
+          <div class="section-header reveal">
+            <p class="eyebrow eyebrow-dark">Promociones</p>
+            <h2>COMBOS Y OFERTAS DE LA SEMANA</h2>
+          </div>
+
+          <div class="promo-grid">
+            <article class="promo-card reveal">
+              <span class="promo-tag">Combo</span>
+              <h3>BRAVA POWER</h3>
+              <p>1 Brava Clásica + papas + bebida.</p>
+              <strong>$18.000</strong>
+              <a
+                href="https://wa.me/56900000000?text=Hola%20BRAVA%20BURGER%2C%20quiero%20reservar%20el%20combo%20BRAVA%20POWER."
+                class="promo-link"
+                target="_blank"
+                rel="noreferrer"
+                >Solicitar</a
+              >
+            </article>
+
+            <article class="promo-card reveal popular">
+              <span class="promo-tag">Más vendido</span>
+              <h3>DOUBLE EXPERIENCE</h3>
+              <p>2 hamburguesas + papas + bebida + salsa especial.</p>
+              <strong>$24.000</strong>
+              <a
+                href="https://wa.me/56900000000?text=Hola%20BRAVA%20BURGER%2C%20quiero%20consultar%20el%20combo%20DOUBLE%20EXPERIENCE."
+                class="promo-link"
+                target="_blank"
+                rel="noreferrer"
+                >Solicitar</a
+              >
+            </article>
+
+            <article class="promo-card reveal">
+              <span class="promo-tag">Noche</span>
+              <h3>BRAVA NIGHT</h3>
+              <p>1 Bacon Deluxe + 2 porciones de onion rings.</p>
+              <strong>$21.000</strong>
+              <a
+                href="https://wa.me/56900000000?text=Hola%20BRAVA%20BURGER%2C%20me%20interesa%20el%20combo%20BRAVA%20NIGHT."
+                class="promo-link"
+                target="_blank"
+                rel="noreferrer"
+                >Solicitar</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow eyebrow-dark">Contacto</p>
+            <h2>LISTOS PARA HACERLO BRAVO</h2>
+            <p>
+              Esta es una demostración comercial ficticia, pensada para mostrar la
+              identidad visual y la experiencia del restaurante en una web premium.
+            </p>
+
+            <div class="contact-list">
+              <div>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/56900000000" target="_blank" rel="noreferrer"
+                  >+56 9 0000 0000</a
+                >
+              </div>
+              <div>
+                <span>Instagram</span>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer"
+                  >@bravaburger.demo</a
+                >
+              </div>
+              <div>
+                <span>Dirección</span>
+                <p>Av. El Barrio 123, Santiago — demostración</p>
+              </div>
+              <div>
+                <span>Horario</span>
+                <p>Lun a Dom · 12:00 a 23:30 hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-card reveal">
+            <h3>Agenda tu visita</h3>
+            <a
+              href="https://wa.me/56900000000?text=Hola%20BRAVA%20BURGER%2C%20quiero%20agendar%20una%20visita%20o%20consultar%20mi%20pedido."
+              class="primary-btn full-width"
+              target="_blank"
+              rel="noreferrer"
+              >CONSULTAR POR WHATSAPP</a
+            >
+            <a
+              href="https://www.instagram.com"
+              class="secondary-btn full-width"
+              target="_blank"
+              rel="noreferrer"
+              >SEGUIR EN INSTAGRAM</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>BRAVA BURGER — No es una hamburguesa más.</p>
+        <p>Demostración comercial ficticia para presentación de marca.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
